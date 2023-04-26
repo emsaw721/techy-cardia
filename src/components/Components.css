@@ -1,25 +1,38 @@
 :root {
-    --primary-color: #0D1B2A;
-    --secondary-color: #1B263B;
-    --tertiary-color: #774141;
-    --quaternary-color: #a97778;
-    --quinary-color: #fff9f9; 
+    --primary-color: #0F0F0E;
+    --secondary-color: #131413;
+    --tertiary-color: #7B7B79;
+    --quaternary-color: #D6D8D7;
+    --quinary-color: #ffffff; 
+    --sextary-color: #29353C;
+    --septinary-color: #615048; 
+    --octinary-color: #C8BEB6; 
+  }
+
+  /*--------- HEADER FORMATTING ---------*/
+  .header{
+    background: var(--primary-color);
   }
 
 
+  /*------- NAV FORMATTING ---------*/ 
   .navcontainer {
-    display: flex; 
-    justify-content: space-between; 
     position: sticky; 
     top: 0; 
   }
   
   .nav {
-      background-color: var(--quinary-color); 
-      color: var(--primary-color); 
+      display: flex; 
+      justify-content: space-around;
+      background-color: var(--secondary-color); 
+      color: var(--quinary-color); 
       font-family: Lato;  
       position: sticky; 
       top: 0; 
+      list-style-type: none;
+      text-decoration: none;
+      margin: 0; 
+      padding: 1em; 
   }
   
   
@@ -34,28 +47,29 @@
   
   .nav-item{
     font-size: 2em; 
-    color: var(--primary-color); 
+    color: var(--secondary-color); 
     font-family: Lato; 
     position: sticky; 
     top: 0; 
   }
   
   a.nav-item {
-    color: var(--primary-color); 
+    color: var(--quinary-color); 
     font-family: Lato; 
     position: sticky; 
     top: 0; 
+    text-decoration: none;
   }
   
   a.nav-link{
-    color: var(--primary-color); 
+    color: var(--quinary-color); 
     font-family: Lato; 
     position: sticky; 
     top: 0; 
+    text-decoration: none;
   }
   
   a.nav-link:hover {
-      text-decoration: none; 
       color: var(--quinary-color); 
       font-family: Lato;  
       position: sticky; 
@@ -72,7 +86,7 @@
   }
   
   a.nav-link:visited {
-    color: var(--primary-color); 
+    color: var(--octinary-color); 
     font-family: Lato; 
     text-decoration: none; 
     position: sticky; 
@@ -83,27 +97,11 @@
     color: var(--quinary-color); 
   }
   
-  .hover-2 {
-    --h: 1.2em;   /* the height */
-    
-    line-height: var(--h);
-    background: 
-      linear-gradient( #778DA9 0 0) 
-      bottom/100% calc(100% - var(--_i,1)*100%) no-repeat;
-    overflow: hidden;
-    transition: 0.3s;
-    font-family: Lato; 
-    position: sticky; 
-    top: 0; 
-  }
-  
-  .hover-2:hover {
-    --_i: 0;
-    text-decoration: none; 
-    font-family: Lato; 
-    color: var(--quinary-color);
-    position: sticky; 
-    top: 0; 
+  /* ------- HERO FORMATTING -------*/ 
+
+  .hero {
+    padding: 0; 
+    background-image: url('codeblog_hero.png');
   }
   
   @media only screen and (max-width: 600px) {
